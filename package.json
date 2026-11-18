@@ -4,9 +4,8 @@
   "description": "ThinkBoard is a full-stack note-taking web app built with the MERN stack. It lets you create and view notes in a clean, responsive interface.",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix Backend && npm install --include=dev --prefix Frontend && npm run build --prefix Frontend",
-    "start": "npm run start --prefix Backend"
-  },
+"build": "npm install --prefix Backend && npm install --include=dev --prefix Frontend && npm run build --prefix Frontend",
+"start": "npm run start --prefix Backend"  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sarah-SWE/thinkboard-notes-app.git"
