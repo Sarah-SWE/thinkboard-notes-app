@@ -49,8 +49,8 @@ npm run dev
 The app runs on `http://localhost:5173`.
 
 
-👩‍💻 Author
-Sarah — @Sarah-SWE
+👩🏻‍💻Author
+Sarah ALmherat — @Sarah-SWE
 
 <div align="center">
 
