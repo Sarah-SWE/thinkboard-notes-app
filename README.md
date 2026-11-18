@@ -39,3 +39,31 @@ cd Backend
 npm install
 ```
 Create a `.env` file:
+Then run:
+```bash
+npm run dev
+```
+
+### Frontend
+```bash
+cd Frontend
+npm install
+npm run dev
+```
+The app runs on `http://localhost:5173`.
+
+## Deployment
+The app is deployed on [Render](https://render.com) as a single web service. The Express server serves the built frontend in production.
+
+- **Build Command:** `npm run build`
+- **Start Command:** `npm run start`
+- **Environment Variables:** `MONGO_URI`, `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN`, `NODE_ENV=production`
+
+## 👩🏻‍💻 Author
+Sarah Almherat — [@Sarah-SWE](https://github.com/Sarah-SWE)
+
+<div align="center">
+
+⭐ If you like this project, give it a star!
+
+</div>
