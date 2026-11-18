@@ -47,3 +47,12 @@ npm install
 npm run dev
 ```
 The app runs on `http://localhost:5173`.
+👩‍💻 Author
+
+Sarah — @Sarah-SWE
+
+<div align="center">
+
+⭐ If you like this project, give it a star!
+
+</div>
