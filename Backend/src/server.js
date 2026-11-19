@@ -19,6 +19,7 @@ if (process.env.NODE_ENV !== "production") {
   );
 }
 app.use(express.json());
+app.set("trust proxy", 1);
 app.use(rateLimiter);
 app.use("/api/notes", notesRoutes);
 
