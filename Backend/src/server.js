@@ -5,7 +5,8 @@ import path from "path";
 
 import notesRoutes from "./routes/notesRoutes.js";
 import { connectDB } from "./config/db.js";
-import rateLimiter from "./middleware/rateLimiter.js";const app = express();
+import rateLimiter from "./middleware/rateLimiter.js";
+const app = express();
 const port = process.env.PORT || 5000;
 const __dirname = path.resolve();
 
@@ -18,6 +19,7 @@ if (process.env.NODE_ENV !== "production") {
   );
 }
 app.use(express.json());
+app.set("trust proxy", 1);
 app.use(rateLimiter);
 app.use("/api/notes", notesRoutes);
 
