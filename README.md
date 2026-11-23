@@ -38,4 +38,36 @@ ThinkBoard is a full-stack note-taking web app built with the MERN stack. It let
 cd Backend
 npm install
 ```
+
+## API Endpoints
+| Method  | Endpoint         | Description   |
+@@ -31,29 +39,3 @@ cd Backend
+npm install
+```
 Create a `.env` file:
+```
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+```
+Then run:
+```bash
+npm run dev
+```
+
+### Frontend
+```bash
+cd Frontend
+npm install
+npm run dev
+```
+The app runs on `http://localhost:5173`.
+
+
+👩🏻‍💻Author
+Sarah ALmherat — @Sarah-SWE
+
+<div align="center">
+
+⭐ If you like this project, give it a star!
+
+</div>
