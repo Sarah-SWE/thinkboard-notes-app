@@ -39,21 +39,21 @@ const NoteDetailsPage = () => {
       toast.error("Failed to delete this note");
     }
   };
-  const handleSaveBtn =async () => {
+  const handleSaveBtn = async () => {
     if (!note.title.trim() || !note.content.trim()) {
       toast.error("Please Add a title or content");
       return;
     }
     setIsSaving(true);
     try {
-      await api.put(`/notes/${id}`,note)
-      toast.success('Note updated successfully!')
-      navigate('/')
+      await api.put(`/notes/${id}`, note);
+      toast.success("Note updated successfully!");
+      navigate("/");
     } catch (error) {
       console.error("Something went error ", error);
       toast.error("Failed to update this note");
-    }finally{
-      setIsSaving(false)
+    } finally {
+      setIsSaving(false);
     }
   };
   if (isLoading) {
@@ -65,6 +65,7 @@ const NoteDetailsPage = () => {
   }
   return (
     <div className="min-h-screen bg-base-200">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(#5E81AC55_1px,transparent_1px)] [background-size:20px_20px] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_30%,#000_60%,transparent_100%)]" />
       <div className="container mx-auto  px-8 py-5">
         <div className="max-w-2xl mx-auto">
           <div className="flex items-center justify-between mb-6 ">
