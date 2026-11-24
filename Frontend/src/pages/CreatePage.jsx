@@ -22,14 +22,12 @@ const CreatePage = () => {
         toast.success('Note Created Successfully! ')
         navigate('/')
     } catch (error) {
-      console.log("Something went wrong! ",error);
+      console.log("Something went wrong!",error);
       if(error.response?.status===429){
         toast.error("Slow down! You're creating notes too fast",{duration:4000,icon:'💀'})
       }else{
       toast.error("Failed to create note")
-      }
-
-    }finally{
+      }}finally{
       setIsLoading(false)
     }
   };
@@ -39,8 +37,7 @@ const CreatePage = () => {
         <div className="max-w-2xl mx-auto">
           <Link
             to="/"
-            className="btn btn-ghost mb-6 transition-all duration-800 hover:rounded-4xl"
-          >
+            className="btn btn-ghost mb-6 transition-all duration-800 hover:rounded-4xl">
             <ArrowLeftIcon className="size-5" />
             Back to Home
           </Link>
